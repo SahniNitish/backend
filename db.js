@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 
 
-mongoose.connect("mongodb+srv://admin:hello@cluster0.pkcgr.mongodb.net/")
+mongoose.connect("**********")
 const  todoSchema = mongoose.Schema({
     titile: String,
     description: String,
