@@ -1,9 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const { z } = require("zod");
+const cors = require("cors")
 
 const app = express();
 app.use(express.json());
+
+app.use(cors());
+
 
 // Mongoose Connection
 mongoose.connect("mongodb+srv://admin:hello@cluster0.pkcgr.mongodb.net/")
